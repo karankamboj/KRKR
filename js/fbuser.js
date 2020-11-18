@@ -27,6 +27,16 @@
       var youdo = $("#youdo").val();
       var nearby = $("#nearby").val();
       var suggestion = $("#suggestion").val();
+
+
+      var today = new Date();
+      var dd = String(today.getDate()).padStart(2, '0');
+      var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      var yyyy = today.getFullYear();
+
+      today = dd + '/' + mm + '/' + yyyy;
+      
+
     
     
       // Push a new recommendation to the database using those values
@@ -38,6 +48,7 @@
         "What he do": youdo,
         "Nearby_Place": nearby,
         "Suggestion": suggestion,
+        "Date " : today,
       
       });
 
