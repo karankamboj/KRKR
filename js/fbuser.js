@@ -52,7 +52,7 @@
       
       });
 
-      alert("Your details have been sent to KRKR!")
+      alert("Your details have been sent to team KRKR! :)")
     };
     
     // When the window is fully loaded, call this function.
